@@ -1,0 +1,81 @@
+body {
+  background: #0e3036;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(0deg, #0e3036, #199aba);
+  /* For Safari 5.1 to 6 */
+  background: -o-linear-gradient(0deg, #0e3036, #199aba);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(0deg, #0e3036, #199aba);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, #0e3036, #199aba);
+  /* Standard syntax */
+  color: #EFEFEF;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center; }
+
+main .landing {
+  background-image: url(/images/VegasNight3x.jpg);
+  height: 100vh;
+  background-size: cover;
+  border-bottom: 5px inset darkmagenta;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center; }
+  main .landing .splashTitle {
+    color: #33CCD3;
+    padding-top: 25%; }
+main .content {
+  background-color: #E0E0E0;
+  margin: 0 auto;
+  width: 85%; }
+  main .content .intro {
+    padding: 8% 2% 5%;
+    background-color: #1A1A1A;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around; }
+    @media (max-width: 590px) {
+      main .content .intro {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around; } }
+    main .content .intro #biopic {
+      padding-left: 0;
+      width: 30%;
+      height: auto;
+      max-width: 30%;
+      max-height: 100%;
+      border-radius: 40%; }
+    main .content .intro .biotext {
+      padding-left: 5%;
+      text-align: left; }
+    main .content .intro #principles {
+      color: #33CCD3; }
+  main .content .postintro {
+    background-color: #E0E0E0; }
+    main .content .postintro .heading {
+      border-bottom: 3px solid #33CCD3; }
+    main .content .postintro #funfacts {
+      color: #292929;
+      padding: 2%;
+      text-align: left; }
+
+/*# sourceMappingURL=home.css.map */

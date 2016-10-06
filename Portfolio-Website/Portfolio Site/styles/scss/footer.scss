@@ -1,0 +1,127 @@
+// mixins
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin transition($vals) {
+  -webkit-transition: $vals;
+  -moz-transition: $vals;
+  -o-transition: $vals;
+  transition: $vals;
+}
+
+// colors (kinda like variables, use "$white" instead of #EFEFEF in code)
+$white: #EFEFEF;
+$gray: #E0E0E0;
+$blue: #33CCD3;
+$red: deeppink;
+$green: #54AC9C;
+$dark: #292929;
+
+footer{
+    width: 100%;
+    max-height: 15%;
+    background-color: black;
+    box-shadow: 0 0 0 1px $blue;
+    h1 {
+        color: $blue;
+    }
+    .fa {
+        color: $white;
+    }
+    .container{
+        margin: 0 auto;
+        @include flexbox;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+      
+        .complogo {
+            width: 30%;
+            text-align: left;
+            font-size: 12px;
+            @include flexbox;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+            a {
+                text-decoration: none;
+            }
+        }
+        .footNav {
+            width: 40%;
+            @media (max-width: 570px){            // Take entire width on small displays
+                width: 100%;
+            }
+            .icon-facebook {
+                background-color: #3b5998;
+            }
+            .icon-twitter {
+                background-color: #55acee;
+            }
+            .icon-linkedin {
+                background-color: #0077B5;
+            }
+            .icon-google {
+                background-color: #dd4b39;
+            }
+            .items {
+                color: $blue;
+            }
+        }
+        .extra {
+            width: 30%;
+            text-align: right;
+            .fa {
+                color: $blue;
+            }
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+            @include flexbox;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            align-content: stretch;
+        }
+        @media (max-width: 570px){                 // Reformat footer for small displays
+            @include flexbox;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            .complogo {
+                width: 100%;
+                text-align: center;
+                @include flexbox;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: stretch;
+            }
+            .extra {
+                width: 100%;
+                @include flexbox;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: stretch;
+            }
+        }
+    }
+}

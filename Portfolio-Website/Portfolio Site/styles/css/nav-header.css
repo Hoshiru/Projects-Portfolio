@@ -1,0 +1,97 @@
+header {
+  width: 100%;
+  max-height: 6%;
+  background-color: black;
+  box-shadow: 0 0 2px 0 #E0E0E0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5); }
+  header .container {
+    margin: 0 auto;
+    padding: 0 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch; }
+    header .container .fa {
+      color: #33CCD3; }
+    header .container #logo {
+      width: 30%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: stretch;
+      transition: color 0.2s; }
+      @media (max-width: 590px) {
+        header .container #logo {
+          width: auto; } }
+      header .container #logo #logotext {
+        text-decoration: none;
+        color: #EFEFEF; }
+      header .container #logo #logotext:hover {
+        color: #d6d6d6; }
+    header .container #menu-toggle {
+      display: none;
+      border: 0;
+      outline: none;
+      background: transparent; }
+      @media (max-width: 590px) {
+        header .container #menu-toggle {
+          display: block; } }
+    header .container #nav {
+      width: 70%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: stretch; }
+      header .container #nav .highlight {
+        border-bottom: 2px solid transparent;
+        text-decoration: none;
+        color: #33CCD3;
+        transition: border-bottom 0.2s cubic-bezier(0.215, 0.61, 0.355, 1); }
+      header .container #nav #hlight1:hover {
+        border-bottom: 2px solid magenta; }
+      header .container #nav #hlight2:hover {
+        border-bottom: 2px solid aqua; }
+      header .container #nav #hlight3:hover {
+        border-bottom: 2px solid chartreuse; }
+      header .container #nav #hlight4:hover {
+        border-bottom: 2px solid darkorange; }
+      header .container #nav #hlight5:hover {
+        border-bottom: 2px solid red; }
+      @media (max-width: 590px) {
+        header .container #nav {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-around;
+          align-items: center;
+          align-content: center;
+          position: fixed;
+          top: 6%;
+          width: 100%; }
+          header .container #nav a {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #EFEFEF;
+            border-top: 1px groove;
+            text-align: center;
+            width: 50%; } }
+
+/*# sourceMappingURL=nav-header.css.map */

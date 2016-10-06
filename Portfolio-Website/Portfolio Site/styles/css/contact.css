@@ -1,0 +1,54 @@
+body {
+  background: #0e0f12;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(45deg, #0e0f12, #198aba);
+  /* For Safari 5.1 to 6 */
+  background: -o-linear-gradient(45deg, #0e0f12, #198aba);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(45deg, #0e0f12, #198aba);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(45deg, #0e0f12, #198aba);
+  /* Standard syntax */
+  color: #EFEFEF;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center; }
+
+main .content {
+  background-color: #1A1A1A;
+  margin: 0 auto;
+  width: 88%;
+  padding: 5% 2% 5%; }
+  main .content h1 {
+    font-size: 50px;
+    color: #33CCD3;
+    background: #0e0f12;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(45deg, #0e0f12, #198aba);
+    /* For Safari 5.1 to 6 */
+    background: -o-linear-gradient(45deg, #0e0f12, #198aba);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, #0e0f12, #198aba);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, #0e0f12, #198aba);
+    /* Standard syntax */ }
+  main .content .contact {
+    padding: 5% 2% 5%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around; }
+  main .content .contactText {
+    text-align: left; }
+  main .content #contactPic {
+    width: 30%;
+    height: auto;
+    max-width: 30%;
+    max-height: 100%; }
+
+/*# sourceMappingURL=contact.css.map */
