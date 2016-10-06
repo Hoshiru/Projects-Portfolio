@@ -1,0 +1,87 @@
+// mixins
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin transition($vals) {
+  -webkit-transition: $vals;
+  -moz-transition: $vals;
+  -o-transition: $vals;
+  transition: $vals;
+}
+
+@mixin linear-gradient($deg,$color1,$color2) {
+    background: $color1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($deg, $color1, $color2); /* For Safari 5.1 to 6 */
+    background: -o-linear-gradient($deg, $color1, $color2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($deg, $color1, $color2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($deg, $color1, $color2); /* Standard syntax */
+}
+
+$white: #EFEFEF;
+$gray: #E0E0E0;
+$blue: #33CCD3;
+$red: deeppink;
+$green: #54AC9C;
+$dark: #292929;
+
+// ================================================================================== //
+
+body {
+    //@include linear-gradient(45deg, #0e0f12, #198aba);
+    color: $gray;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+main {
+    .pageHeader {  
+        padding: 3% 2% 1%;
+        .headerImg {
+            width: 5%;
+            height: auto;
+            max-width: 100%;
+            max-height: auto;
+            border-radius: 50px;
+        }
+        .headerText {
+            font-size: 40px;
+            color: $white;
+        }
+        @include linear-gradient(0deg, #0e3036, #199aba);
+        border-left: 5px solid #0e2626;
+        border-top: 10px solid cadetblue;
+        border-right: 10px outset cadetblue;
+    }
+    .pageBody {
+        padding: 6% 0 6%;
+        background-color: $gray;
+        color: $dark;
+
+    }
+    #login {
+        height: 50%;
+        padding: 7% 2% 7%;
+        .btn {
+            @include linear-gradient(0deg, #0e3036, #199aba);
+            color: $white;
+            display: block;
+            margin: 0 auto;
+            margin-top: 1%;
+        }
+    }
+    
+}

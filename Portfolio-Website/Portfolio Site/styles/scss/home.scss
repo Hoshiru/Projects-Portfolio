@@ -1,0 +1,115 @@
+// mixins
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin transition($vals) {
+  -webkit-transition: $vals;
+  -moz-transition: $vals;
+  -o-transition: $vals;
+  transition: $vals;
+}
+
+@mixin linear-gradient($deg,$color1,$color2) {
+    background: $color1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($deg, $color1, $color2); /* For Safari 5.1 to 6 */
+    background: -o-linear-gradient($deg, $color1, $color2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($deg, $color1, $color2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($deg, $color1, $color2); /* Standard syntax */
+}
+
+$white: #EFEFEF;
+$gray: #E0E0E0;
+$blue: #33CCD3;
+$red: deeppink;
+$green: #54AC9C;
+$dark: #292929;
+
+// ================================================================================== //
+
+body {
+    @include linear-gradient(0deg, #0e3036, #199aba);
+    color: $white;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+main {
+    .landing {
+        background-image: url(/images/VegasNight3x.jpg);
+        height: 100vh;
+        background-size: cover;
+        border-bottom: 5px inset darkmagenta;
+        @include flexbox;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        .splashTitle {
+            color: $blue;
+            padding-top: 25%;
+        }
+        .splashText {
+           
+        }
+    }
+    .content{
+        background-color: $gray;
+        margin: 0 auto;
+        width: 85%;
+        .intro {
+            padding: 8% 2% 5%;
+            background-color: #1A1A1A;
+            @include flexbox;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+            @media (max-width: 590px) {
+                @include flexbox;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+                align-items: center;
+                align-content: space-around;
+            }
+            #biopic {
+                padding-left: 0;
+                width: 30%;
+                height: auto;
+                max-width: 30%;
+                max-height: 100%;
+                border-radius: 40%;
+            }
+            .biotext {
+                padding-left: 5%;
+                text-align: left;
+            }
+            #principles {
+                color: $blue;
+            }
+        } 
+        .postintro {
+            background-color: $gray;
+            .heading {
+                border-bottom: 3px solid $blue;
+            }
+            #funfacts {
+                color: $dark;
+                padding: 2%;
+                text-align: left;
+            }
+        }
+    }
+}

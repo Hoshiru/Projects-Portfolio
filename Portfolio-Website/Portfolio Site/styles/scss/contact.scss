@@ -1,0 +1,79 @@
+// mixins
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin transition($vals) {
+  -webkit-transition: $vals;
+  -moz-transition: $vals;
+  -o-transition: $vals;
+  transition: $vals;
+}
+
+@mixin linear-gradient($deg,$color1,$color2) {
+    background: $color1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($deg, $color1, $color2); /* For Safari 5.1 to 6 */
+    background: -o-linear-gradient($deg, $color1, $color2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($deg, $color1, $color2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($deg, $color1, $color2); /* Standard syntax */
+}
+
+$white: #EFEFEF;
+$gray: #E0E0E0;
+$blue: #33CCD3;
+$red: deeppink;
+$green: #54AC9C;
+$dark: #292929;
+
+// ================================================================================== //
+
+body {
+    @include linear-gradient(45deg, #0e0f12, #198aba);
+    color: $white;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+main {
+    .content {
+        background-color: #1A1A1A;
+        margin: 0 auto;
+        width: 88%;
+        padding: 5% 2% 5%;
+        h1 {
+            font-size: 50px;
+            color: $blue;
+            @include linear-gradient(45deg, #0e0f12, #198aba);
+        }
+        .contact {
+            padding: 5% 2% 5%;
+            @include flexbox;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+        }
+        .contactText {
+            text-align: left;
+        }
+        #contactPic {
+            width: 30%;
+            height: auto;
+            max-width: 30%;
+            max-height: 100%;
+        }
+    }
+}

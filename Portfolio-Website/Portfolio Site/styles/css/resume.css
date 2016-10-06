@@ -1,0 +1,43 @@
+body {
+  background: #0e0f12;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(45deg, #0e0f12, #198aba);
+  /* For Safari 5.1 to 6 */
+  background: -o-linear-gradient(45deg, #0e0f12, #198aba);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(45deg, #0e0f12, #198aba);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(45deg, #0e0f12, #198aba);
+  /* Standard syntax */
+  color: #EFEFEF;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center; }
+
+main .content {
+  background-color: #1A1A1A;
+  margin: 0 auto;
+  width: 80%;
+  padding: 5% 2% 5%; }
+  main .content h1 {
+    font-size: 50px;
+    color: #33CCD3;
+    background: #0e0f12;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(45deg, #0e0f12, #198aba);
+    /* For Safari 5.1 to 6 */
+    background: -o-linear-gradient(45deg, #0e0f12, #198aba);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, #0e0f12, #198aba);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, #0e0f12, #198aba);
+    /* Standard syntax */ }
+  main .content .resume {
+    padding: 5% 2% 5%; }
+  main .content #contactPic {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%; }
+
+/*# sourceMappingURL=resume.css.map */

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <!-- jQuery Javascript Library -->
+        <script
+			  src="https://code.jquery.com/jquery-3.1.0.js"
+			  integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+			  crossorigin="anonymous">
+        </script>
+
+            <!-- Bootstrap Library -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>  
+        
+            <!-- FontAwesome library for custom icons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/> 
+
+            <!-- Animate.css Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+            <!-- Compatibility & Fonts -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet"> 
+        
+            <!-- Page Info & Links -->
+        <title>Jared Hayes</title>
+        <meta name="description" content="Jared MK Hayes Portfolio">
+        <link type="text/css" rel="stylesheet" href="/styles/css/port.css">
+        <link type="text/css" rel="stylesheet" href="/styles/css/nav-header.css">
+        <link type="text/css" rel="stylesheet" href="/styles/css/footer.css">
+        
+    </head>
+    
+<!-- ================================================================================= -->
+    
+    <body data-spy="scroll" data-target="#side-nav">
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <i class="fa fa-cube"></i>
+                    <a href="#" id="logotext"><h3>Jared Hayes</h3></a>
+                </div>
+                <button id="menu-toggle"><i class="fa fa-list"></i></button>
+                <nav id="nav">
+                    <a class="highlight" id="hlight1" href="/index.html">About</a>
+                    <a class="highlight" id="hlight2" href="/html/resume.html">Resume</a>
+                    <a class="highlight" id="hlight3" href="/html/port.html">Portfolio</a>
+                    <a class="highlight" id="hlight4" href="/html/contact.html">Contact</a>
+                    <a class="highlight" id="hlight5" href="/html/extra.html">Extra</a>
+                </nav> 
+            </div>
+        </header>
+        
+        <main>
+            <div class="sidebar" id="side-nav">  
+                <ul class="nav sidenav">
+                    <li><div class="item">
+                        <a class="itemlink" id="ilink1" href="#dropWeb">
+                            <i class="fa fa-globe"></i>
+                            <p class="menu-text">Web Development</p>
+                        </a>
+                    </div></li>
+                    <li><div class="item">
+                        <a class="itemlink" id="ilink2" href="#dropHardware">
+                            <i class="fa fa-keyboard-o"></i>
+                            <p class="menu-text">Processor Design</p>
+                        </a>
+                    </div></li>
+                    <li><div class="item">
+                        <a class="itemlink" id="ilink3" href="#dropMobile">
+                            <i class="fa fa-mobile"></i>
+                            <p class="menu-text">Mobile Development</p>
+                        </a>
+                    </div></li>
+                    <li><div class="item">
+                        <a class="itemlink" id="ilink4" href="#dropEmbedded">
+                            <i class="fa fa-gears"></i>
+                            <p class="menu-text">Embedded Systems</p>
+                        </a>
+                    </div></li>
+                </ul>
+            </div>
+            
+            <section class="portcontainer">
+                <h1 class="headingTop">Portfolio</h1>
+                <p>Here is a showcase of my highlighted projects. My full portfolio can be found at my github <a class="linksproj" href="https://github.com/Hoshiru/Projects-Portfolio/" target="_blank">here</a>.<br>
+                Projects that are currently in progress can be found on the &quot;Extra&quot; page (login required).</p>
+                
+                <div class="categoryHeader" id="dropWeb">
+                    <h2 class="headingcat">Web Development</h2>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <section class="pcategory" id="web">
+                    
+                </section>
+                <div class="categoryHeader" id="dropHardware">
+                    <h2 class="headingcat">Hardware &amp; Processor Design</h2>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <section class="pcategory" id="hardware">
+                    <div class="project" id="mipschip">   
+                        <h3 class="headingproj">MIPS Processor Chip</h3><br>
+                        <img class="mainimg" id="pcb" src="/images/PCB2x.jpg" alt="pcb"/>
+                        <div class="imgrow" id="mipsrow"><br>
+                            <img class="subimg" src="/images/Chip2x.jpg" alt="chip"/>
+                            <img class="subimg" src="/images/MIPSteam.jpg" alt="team"/>
+                            <img class="subimg" src="/images/ChipLay2x.jpg" alt="layout"/>
+                        </div><br>
+                        <h4 class="subheadproj">Description</h4>
+                        <p class="textproj">Implemented an 8-bit microprocessor with onboard SRAM memory fabricated onto an (40-pin DIP) integrated circuit chip.  Instruction set is loosely based on the MIPS architecture with some significant simplifications. Layouts and schematics were created and tested through Cadence Virtuoso Software. Submitted to the UNLV Engineering Senior Design Competition.</p>
+                        <p class="textproj"><strong>Team Members</strong>: Jared Hayes, Nick Repetti, Jason Silic. &ensp; <strong>Faculty Advisor</strong>: Dr. R. Jacob Baker</p>
+                        <h4 class="subheadproj">Background</h4>
+                        <p class="textproj">MIPS processors became a widely used processor for embedded systems design and has been implemented in many consumer electronics products, such as routers and Sony video game consoles. The project requires thorough knowledge of computer architecture and digital electronics. The processor is designed on the transistor level with CMOS design concepts using the C5 process.</p>
+                        <p class="textproj">In order to make the project more managable for our time and resource contraints, we scaled down the processor to be 8-bits with a 16-bit instruction set instead of the usual 32-bits.  We also ommitted pipelining hardware. In hindsight, if we had implemented the MIPS architecture directly, instead of a custom version, we may have been able to create the full 32-bit system in spite of our constraints.</p>
+                        <p class="textproj">The major steps taken in the development of this chip:
+                            <ol class="textproj">
+                                <li>Create a custom assembly language as a basis for the hardware design of the processor</li>
+                                <li>Construct gate-level schematics of major processor components in Cadence software</li>
+                                <li>Run simulations and testing of schematics</li>
+                                <li>Construct transistor-level layouts of all schematics</li>
+                                <li>Test layouts with DRC checks and LVS rule compliances for MOSIS C5 CMOS fabrication process. Submit designs for fabrication.</li>
+                                <li>Design a PCB with LEDs, 7-segment displays, and push-buttons for user-interaction</li>
+                                <li>Program assembly applications &amp; games to be run on the processor (simon says, calculator app).</li>
+                            </ol>
+                        </p>
+                        <h4 class="subheadproj">Future Improvements</h4>
+                        <ul class="textproj">
+                            <li>Implement MIPS architecture directly -> 32-bit system with pipelining</li>
+                            <li>Fix a sudden voltage spike that occured when outputting data, causing incompatibility with external components</li>
+                            <li>Implement processor using an ARM architecture</li>
+                        </ul>
+                        <h4 class="subheadproj">Project Links</h4>
+                        <p class="textproj"><a class="linksproj" href="https://github.com/Hoshiru/Projects-Portfolio/tree/master/Custom-Built-MIPS-Chip" target="_blank">Project Link</a></p>
+                        <p class="textproj"><a class="linksproj" href="http://cmosedu.com/videos/cadence/CompactProcessorReport.pdf" target="_blank">Official Report and Datasheet</a></p>
+                        <p class="textproj"><a class="linksproj" href="http://cmosedu.com/videos/cadence/CPU_TOP.zip" target="_blank">Cadence Project Files</a></p>
+                        <p class="textproj"><a class="linksproj" href="http://cmosedu.com/videos/cadence/cadence_videos.htm" target="_blank">Dr. Baker's Cadence Webpage</a></p>
+                    </div>   
+                </section>
+                <div class="categoryHeader" id="dropMobile">
+                    <h2 class="headingcat">Mobile Development</h2>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <section class="pcategory" id="mobile">
+                    <div class="project" id="dangododge">   
+                        <h3 class="headingproj">iOS Game App</h3><br>
+                        <video class="mainimg" width="300" height="400" controls>
+                            <source src="/images/DangoDodge.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video> 
+                        <h4 class="subheadproj">Description</h4>
+                        <p class="textproj">Implemented an 8-bit microprocessor with onboard SRAM memory fabricated onto an (40-pin DIP) integrated circuit chip.  Instruction set is loosely based on the MIPS architecture with some significant simplifications. Layouts and schematics were created and tested through Cadence Virtuoso Software. Submitted to the UNLV Engineering Senior Design Competition.</p>
+                        <p class="textproj"><strong>Team Members</strong>: Jared Hayes, Nick Repetti, Jason Silic. &ensp; <strong>Faculty Advisor</strong>: Dr. R. Jacob Baker</p>
+                        <h4 class="subheadproj">Background</h4>
+                        <p class="textproj">MIPS processors became a widely used processor for embedded systems design and has been implemented in many consumer electronics products, such as routers and Sony video game consoles. The project requires thorough knowledge of computer architecture and digital electronics. The processor is designed on the transistor level with CMOS design concepts using the C5 process.</p>
+                        <p class="textproj">In order to make the project more managable for our time and resource contraints, we scaled down the processor to be 8-bits with a 16-bit instruction set instead of the usual 32-bits.  We also ommitted pipelining hardware. In hindsight, if we had implemented the MIPS architecture directly, instead of a custom version, we may have been able to create the full 32-bit system in spite of our constraints.</p>
+                        <p class="textproj">The major steps taken in the development of this chip:
+                            <ol class="textproj">
+                                <li>Create a custom assembly language as a basis for the hardware design of the processor</li>
+                                <li>Construct gate-level schematics of major processor components in Cadence software</li>
+                                <li>Run simulations and testing of schematics</li>
+                                <li>Construct transistor-level layouts of all schematics</li>
+                                <li>Test layouts with DRC checks and LVS rule compliances for MOSIS C5 CMOS fabrication process. Submit designs for fabrication.</li>
+                                <li>Design a PCB with LEDs, 7-segment displays, and push-buttons for user-interaction</li>
+                                <li>Program assembly applications &amp; games to be run on the processor (simon says, calculator app).</li>
+                            </ol>
+                        </p>
+                        <h4 class="subheadproj">Future Improvements</h4>
+                        <ul class="textproj">
+                            <li>Implement MIPS architecture directly -> 32-bit system with pipelining</li>
+                            <li>Fix a sudden voltage spike that occured when outputting data, causing incompatibility with external components</li>
+                            <li>Implement processor using an ARM architecture</li>
+                        </ul>
+                        <h4 class="subheadproj">Project Links</h4>
+                        <p class="textproj"><a class="linksproj" href="https://github.com/Hoshiru/Projects-Portfolio/tree/master/Custom-Built-MIPS-Chip" target="_blank">Project Link</a></p>
+                        <p class="textproj"><a class="linksproj" href="http://cmosedu.com/videos/cadence/CompactProcessorReport.pdf" target="_blank">Official Report and Datasheet</a></p>
+                        <p class="textproj"><a class="linksproj" href="http://cmosedu.com/videos/cadence/CPU_TOP.zip" target="_blank">Cadence Project Files</a></p>
+                        <p class="textproj"><a class="linksproj" href="http://cmosedu.com/videos/cadence/cadence_videos.htm" target="_blank">Dr. Baker's Cadence Webpage</a></p>
+                    </div>   
+                </section>
+                <div class="categoryHeader" id="dropEmbedded">
+                    <h2 class="headingcat">Embedded Systems</h2>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <section class="pcategory" id="embedded">
+                    <div class="project" id="coindetect">   
+                        <h3 class="headingproj">OpenCV Coin Detection</h3><br>
+                        <img class="mainimg" id="bbb" src="/images/BBBlack2x.jpg" alt="BBBlack"/>
+                        <div class="imgrow" id="coinrow"><br>
+                            <img class="subimg" src="/images/BoundRects1x.jpg" alt="beagle"/>
+                            <img class="subimg" src="/images/Coins1x.jpg" alt="coins"/>
+                            <img class="subimg" src="/images/Beaglebone2x.jpg" alt="rects"/>
+                        </div><br>
+                        <h4 class="subheadproj">Description</h4>
+                        <p class="textproj">Implemented an 8-bit microprocessor with onboard SRAM memory fabricated onto an (40-pin DIP) integrated circuit chip.  Instruction set is loosely based on the MIPS architecture with some significant simplifications. Layouts and schematics were created and tested through Cadence Virtuoso Software. Submitted to the UNLV Engineering Senior Design Competition.</p>
+                        <p class="textproj"><strong>Team Members</strong>: Jared Hayes, Nick Repetti, Jason Silic. &ensp; <strong>Faculty Advisor</strong>: Dr. R. Jacob Baker</p>
+                        <h4 class="subheadproj">Background</h4>
+                        <p class="textproj">MIPS processors became a widely used processor for embedded systems design and has been implemented in many consumer electronics products, such as routers and Sony video game consoles. The project requires thorough knowledge of computer architecture and digital electronics. The processor is designed on the transistor level with CMOS design concepts using the C5 process.</p>
+                        <p class="textproj">In order to make the project more managable for our time and resource contraints, we scaled down the processor to be 8-bits with a 16-bit instruction set instead of the usual 32-bits.  We also ommitted pipelining hardware. In hindsight, if we had implemented the MIPS architecture directly, instead of a custom version, we may have been able to create the full 32-bit system in spite of our constraints.</p>
+                        <p class="textproj">The major steps taken in the development of this chip:
+                            <ol class="textproj">
+                                <li>Create a custom assembly language as a basis for the hardware design of the processor</li>
+                                <li>Construct gate-level schematics of major processor components in Cadence software</li>
+                                <li>Run simulations and testing of schematics</li>
+                                <li>Construct transistor-level layouts of all schematics</li>
+                                <li>Test layouts with DRC checks and LVS rule compliances for MOSIS C5 CMOS fabrication process. Submit designs for fabrication.</li>
+                                <li>Design a PCB with LEDs, 7-segment displays, and push-buttons for user-interaction</li>
+                                <li>Program assembly applications &amp; games to be run on the processor (simon says, calculator app).</li>
+                            </ol>
+                        </p>
+                        <h4 class="subheadproj">Future Improvements</h4>
+                        <ul class="textproj">
+                            <li>Implement MIPS architecture directly -> 32-bit system with pipelining</li>
+                            <li>Fix a sudden voltage spike that occured when outputting data, causing incompatibility with external components</li>
+                            <li>Implement processor using an ARM architecture</li>
+                        </ul>
+                        <h4 class="subheadproj">Project Links</h4>
+                        <p class="textproj"><a class="linksproj" href="https://github.com/Hoshiru/Projects-Portfolio/tree/master/Custom-Built-MIPS-Chip" target="_blank">Project Link</a></p>
+                        <p class="textproj"><a class="linksproj" href="http://cmosedu.com/videos/cadence/CompactProcessorReport.pdf" target="_blank">Official Report and Datasheet</a></p>
+                        <p class="textproj"><a class="linksproj" href="http://cmosedu.com/videos/cadence/CPU_TOP.zip" target="_blank">Cadence Project Files</a></p>
+                        <p class="textproj"><a class="linksproj" href="http://cmosedu.com/videos/cadence/cadence_videos.htm" target="_blank">Dr. Baker's Cadence Webpage</a></p>
+                    </div>   
+                </section>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <div class="complogo" id="foot-top-row">
+                    <a href="/index.html"><h1>JMKH</h1></a>
+                    <div id="compinfo">
+                        <p><i class="fa fa-copyright"></i>2016 Jared Hayes</p>
+                    </div>
+                </div>
+                <div class="footNav">
+                    <p class="socicon">
+                        <a href="#"><button class="btn icon-facebook" target="_blank"><i class="fa fa-facebook"></i></button></a>
+                        <a href="https://github.com/Hoshiru/Projects-Portfolio" target="_blank"><button class="btn icon-twitter"><i class="fa fa-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/jared-hayes-80695311b" target="_blank"><button class="btn icon-linkedin"><i class="fa fa-linkedin"></i></button></a>
+                        <a href="https://plus.google.com/u/0/109870440804252466732" target="_blank"><button class="btn icon-google"><i class="fa fa-google"></i></button></a>        
+                    </p>
+                    <p class="items">
+                        <a href="/jmk-home.html">About</a>
+                        <a href="/html/contact.html">Contact</a>   
+                    </p>
+                </div>
+                <div class="extra" id="foot-top-row">
+                    <a href="#top"><i class="fa fa-cube"></i></a>
+                    <a href="#top"><h3>Jared Hayes</h3></a>
+                </div>
+            </div>
+        </footer>
+
+    <script src="/scripts/port.js"></script>
+    <script src="/scripts/nav-header.js"></script>
+
+    </body>
+</html>

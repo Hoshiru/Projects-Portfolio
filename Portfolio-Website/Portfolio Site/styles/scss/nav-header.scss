@@ -1,0 +1,128 @@
+// mixins
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin transition($vals) {
+  -webkit-transition: $vals;
+  -moz-transition: $vals;
+  -o-transition: $vals;
+  transition: $vals;
+}
+
+// colors (kinda like variables, use "$white" instead of #EFEFEF in code)
+$white: #EFEFEF;
+$gray: #E0E0E0;
+$blue: #33CCD3;
+$red: deeppink;
+$green: #54AC9C;
+$dark: #292929;
+
+header {                                        // navigation bar
+    width: 100%;
+    max-height: 6%;
+    background-color: black;
+    box-shadow: 0 0 2px 0 $gray;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    .container {
+        margin: 0 auto;
+        padding: 0 0;
+        @include flexbox;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+        .fa {
+            color: $blue;
+        }
+        #logo {
+            width: 30%;
+            @media (max-width: 590px) {         // show on small displays
+                width: auto;
+            }
+            #logotext {
+                text-decoration: none;
+                color: $white;
+            }
+            @include flexbox;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: stretch;
+            transition: color 0.2s;
+            #logotext:hover {
+                color: darken($white, 10%);
+            }
+        }
+        #menu-toggle {                          // hide menu button on normal displays
+            display: none;
+            border: 0;
+            outline: none;
+            background: transparent;
+            @media (max-width: 590px) {         // show on small displays
+                display: block;
+            }
+        }
+        #nav {
+            width: 70%;
+            @include flexbox;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: stretch;
+           
+            .highlight {                        // Hover style
+                border-bottom: 2px solid transparent;
+                text-decoration: none;
+                color: $blue;
+                transition: border-bottom 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+            #hlight1:hover {
+                border-bottom: 2px solid magenta;  
+            }
+            #hlight2:hover {
+                border-bottom: 2px solid aqua;  
+            }
+            #hlight3:hover {
+                border-bottom: 2px solid chartreuse;  
+            }
+            #hlight4:hover {
+                border-bottom: 2px solid darkorange;  
+            }
+            #hlight5:hover {
+                border-bottom: 2px solid red;  
+            }   
+            
+            @media (max-width: 590px) {         // reformat nav menu on small displays
+                @include flexbox;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+                position: fixed;
+                top: 6%;
+                width: 100%;
+                a {
+                    background-color: rgba(0,0,0,0.5);
+                    color: $white;
+                    border-top: 1px groove;
+                    text-align: center;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

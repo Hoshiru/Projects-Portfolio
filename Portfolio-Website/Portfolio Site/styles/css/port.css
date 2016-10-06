@@ -1,0 +1,152 @@
+body {
+  position: relative;
+  height: 100%;
+  background-color: #292929;
+  color: #EFEFEF;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center; }
+
+main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: space-between; }
+  main .portcontainer {
+    background-color: #1A1A1A;
+    width: 92%;
+    margin: 5% 2% 2%;
+    padding: 2% 2% 2%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around; }
+    main .portcontainer .headingTop {
+      color: #33CCD3;
+      font-size: 50px;
+      background: #0e0f12;
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(45deg, #0e0f12, #198aba);
+      /* For Safari 5.1 to 6 */
+      background: -o-linear-gradient(45deg, #0e0f12, #198aba);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(45deg, #0e0f12, #198aba);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(45deg, #0e0f12, #198aba);
+      /* Standard syntax */
+      margin-bottom: 1%; }
+    main .portcontainer .categoryHeader {
+      cursor: pointer;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: stretch;
+      border-bottom: 4px solid magenta; }
+    main .portcontainer .project .mainimg {
+      width: 400px;
+      height: auto;
+      max-width: 100%;
+      max-height: auto; }
+    main .portcontainer .project .imgrow {
+      display: block; }
+      main .portcontainer .project .imgrow .subimg {
+        width: 400px;
+        height: 200px;
+        max-width: 100%;
+        max-height: 100%; }
+    main .portcontainer .project #coinrow {
+      display: block; }
+      main .portcontainer .project #coinrow .subimg {
+        width: 300px;
+        height: 150px;
+        max-width: 100%;
+        max-height: 100%; }
+    main .portcontainer .project .textproj {
+      text-align: left;
+      font-size: 15px; }
+    main .portcontainer .project .subheadproj {
+      text-align: left;
+      color: #33CCD3;
+      font-size: 20px; }
+  main .sidebar {
+    width: 4%;
+    height: 100%;
+    min-width: 27px;
+    position: fixed;
+    left: 0;
+    top: 6%;
+    background: #0e0f12; }
+    @media (max-width: 400px) {
+      main .sidebar {
+        background-color: transparent; } }
+    main .sidebar .sidenav {
+      text-align: left;
+      position: relative;
+      top: 33%; }
+      main .sidebar .sidenav .item {
+        display: block;
+        height: 70px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+        main .sidebar .sidenav .item .fa {
+          position: absolute;
+          text-align: center;
+          height: 70px;
+          width: 100%;
+          font-size: 25px;
+          padding-top: 25px;
+          color: #EFEFEF;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+        main .sidebar .sidenav .item .menu-text {
+          position: absolute;
+          height: 70px;
+          width: 225px;
+          left: -225px;
+          padding-top: 20px;
+          font-size: 22px;
+          background-color: #33CCD3;
+          text-align: center;
+          color: transparent;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+        main .sidebar .sidenav .item:hover .fa {
+          background: #0e0f12;
+          /* For browsers that do not support gradients */
+          background: -webkit-linear-gradient(90deg, #0e0f12, #198aba);
+          /* For Safari 5.1 to 6 */
+          background: -o-linear-gradient(90deg, #0e0f12, #198aba);
+          /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(90deg, #0e0f12, #198aba);
+          /* For Firefox 3.6 to 15 */
+          background: linear-gradient(90deg, #0e0f12, #198aba);
+          /* Standard syntax */ }
+        main .sidebar .sidenav .item:hover .menu-text {
+          color: #124268;
+          left: 100%; }
+        main .sidebar .sidenav .item:active .fa {
+          background: #E0E0E0; }
+
+/*# sourceMappingURL=port.css.map */
